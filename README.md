@@ -9,7 +9,7 @@ Prepare
 1. Install Pandoc
 2. Download `reveal.js`:
 ~~~
-wget https://github.com/hakimel/reveal.js/archive/3.0.0.zip
+wget https://github.com/hakimel/reveal.js/archive/3.0.0.zip -O reveal.js-3.0.0.zip
 unzip reveal.js-3.0.0.zip
 ln -s reveal.js-3.0.0 reveal.js
 ~~~
@@ -32,8 +32,9 @@ pandoc -t revealjs -s --self-contained habits.md -o habits.html
 Themes
 ------
 
-`-V theme=moon`,
-`-V theme=night`
+`-V theme=moon`
+
+See `reveal.js/css/theme/` for more themes.
 
 
 Code highlighting
