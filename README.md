@@ -15,6 +15,14 @@ ln -s reveal.js-3.0.0 reveal.js
 ~~~
 
 
+Quickstart
+----------
+1. Rename & edit `sample-slides.md`
+2. Run `build.sh`
+
+The script will generate one HTML slideshow for each `.md` file.
+
+
 Compile
 -------
 
@@ -40,7 +48,7 @@ See `reveal.js/css/theme/` for more themes.
 Code highlighting
 -----------------
 
-`--template reveal-template.html --no-highlight`
+`--template template/reveal.template --no-highlight`
 
 
 Transitions

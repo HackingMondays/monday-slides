@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
-pandoc -t revealjs -s habits.md -o habits.html --template reveal-template.html --no-highlight --variable transition=slide --variable css=css/fix-titles.css
+OPTIONS="--template template/reveal.template --no-highlight --variable transition=slide --variable css=css/hacking.css"
+GLOBIGNORE="README.md"
 
+for f in *.md
+do
+  pandoc -t revealjs -s ${f%%.*}.md -o ${f%%.*}.html ${OPTIONS}
+done
