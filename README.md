@@ -100,7 +100,8 @@ option. To produce self-contained slides, add the `--self-contained` option.
 
 Known issues
 ------------
-Slide titles must not contain accents (dots ok, fixed in 3.1.0).
+* Slide titles must not contain accents (dots ok, fixed in 3.1.0).
+* Files included as code blocks must have UNIX line endings.
 
 
 References
