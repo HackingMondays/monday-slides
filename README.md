@@ -1,60 +1,55 @@
-reveal.js - slides
-==================
+monday-slides
+=============
 
 Generate HTML presentation slides from Markdown source.
 
-Dependencies
-------------
+## Dependencies
 
-* Pandoc
-* `reveal.js`:
+* [Pandoc](http://pandoc.org/)
+* [reveal.js](https://github.com/hakimel/reveal.js)
 
 
-Quickstart
-----------
+## Quickstart
+
 1. Edit `sample-slides.md`
-2. Run `build.sh`
+2. Run `build.{cmd|sh}`
 
 The script will generate one HTML slideshow for each `.md` file.
 
 
-Compile slides
---------------
+## Manual steps
 
 To produce slides:
 ~~~
-pandoc -t revealjs -s habits.md -o habits.html
+pandoc -t revealjs -s sample-slides.md -o sample-slides.html
 ~~~
 
 Standalone HTML:
 ~~~
-pandoc -t revealjs -s --self-contained habits.md -o habits.html
+pandoc -t revealjs -s --self-contained sample-slides.md -o sample-slides.html
 ~~~
 
 
-Themes
-------
+### Themes
 
 `-V theme=moon`
 
 See `reveal.js/css/theme/` for more themes.
 
 
-Code highlighting
------------------
+### Code highlighting
 
 `--template template/reveal.template --no-highlight`
 
 
-Transitions
------------
+### Transitions
+
 `--variable transition=linear`
 
 one of: `none|fade|slide|convex|concave|zoom`
 
 
-Keyboard shortcuts
-------------------
+### Keyboard shortcuts
 
 `SPACE`: next slide,
 `SHIFT+SPACE`: previous slide
@@ -69,7 +64,7 @@ Keyboard shortcuts
 Pandoc filters
 --------------
 
-The `includes` directory contains our CodeBlock includes filter written in GO.
+The `includes` directory contains our CodeBlock includes filter written in [Go](https://www.golang.org).
 It is based on this library: https://github.com/ffel/pandocfilter (it will be
 downloaded when you run `go get`).
 
@@ -99,7 +94,7 @@ unzip reveal.js-3.1.0.zip
 ln -s reveal.js-3.1.0 reveal.js
 ~~~
 
-In the build script, remove the `--variable revealjs-url=http://cdn.jsdelivr.net/reveal.js/3.0.0`
+In the build script, remove the `--variable revealjs-url=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0`
 option. To produce self-contained slides, add the `--self-contained` option.
 
 
