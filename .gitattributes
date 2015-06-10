@@ -1,0 +1,6 @@
+# https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
+
+*.sh eol=lf
+*.go eol=lf
+*.src eol=lf
+*.js eol=lf

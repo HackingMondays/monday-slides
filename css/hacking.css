@@ -3,8 +3,38 @@
 }
 
 body {
-	background-image: url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	background-position: 3% 3%;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    padding: 5px 20px 5px 20px;
+    bottom: 4px;
+    width: 100%;
+    font-family: monospace;
+    foreground-color: black;
+    background-color: coral;
+}
+
+.reveal code {
+    color: DeepPink;
+}
+
+.reveal pre code {
+    max-height: 446px;
+}
+
+.reveal .slide-number {
+    opacity: 1;
+    font-size: 30px;
+    border: 2px solid;
+    border-color: #3F3F3F;
+	background-color: black;
+	z-index: 1;
+	display: block;
+	padding: 5px 20px 5px 20px;
 }
