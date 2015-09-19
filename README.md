@@ -44,8 +44,9 @@ Windows:
 mklink /d reveal.js reveal.js-3.1.0
 ~~~
 
-In the build script, remove the `--variable revealjs-url=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0`
-option. To produce self-contained slides, add the `--self-contained` option.
+In the build script, remove the `--variable revealjs-url=https://.../reveal.js/3.1.0` option.
+
+To produce self-contained slides, add the `--self-contained` option.
 
 ### Slide options
 
@@ -69,15 +70,12 @@ one of: `none|fade|slide|convex|concave|zoom`
 
 #### Keyboard shortcuts
 
-`ESC` : table of contents
-`SPACE`: next slide,
-`SHIFT+SPACE`: previous slide
-
-`ALT+Click`: zoom
-
-`B` : break
-
-`S` : speaker notes
+* `ESC` : table of contents
+* `SPACE`: next slide,
+* `SHIFT+SPACE`: previous slide
+* `ALT+Click`: zoom
+* `B` : break
+* `S` : speaker notes
 
 
 Pandoc filters
