@@ -1,0 +1,12 @@
+# pandoc options
+--from=markdown+yaml_metadata_block
+--template template/reveal.template
+--no-highlight
+--variable transition=slide
+--variable css=css/hacking.css
+--filter includes.exe
+-t revealjs
+
+# --self-contained
+# --variable revealjs-url=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0
+-o {{.Target}}

@@ -1,7 +1,3 @@
-% Habits
-% John Doe
-% March 22, 2005
-
 # In the morning
 
 ## Getting up
@@ -40,7 +36,7 @@ func botHandler(w http.ResponseWriter, r *http.Request) {
 
 ------------------
 
-![picture of spaghetti](images/spaghetti.jpg)
+![picture of spaghetti](img/spaghetti.jpg)
 
 ## Going to sleep
 
