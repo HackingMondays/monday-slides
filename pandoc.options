@@ -4,7 +4,7 @@
 --no-highlight
 --variable transition=slide
 --variable css=css/hacking.css
---filter includes.exe
+--filter includes
 -t revealjs
 
 # --self-contained
